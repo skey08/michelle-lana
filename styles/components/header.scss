@@ -1,0 +1,19 @@
+.header {
+    display: grid;
+    grid-template-columns: min-content 1fr 1fr;
+
+    // &__name {
+    //     display: grid;
+    //     grid-template-columns: 1fr 2fr;
+    // }
+    
+    // &__nav-list {
+    //     display: grid;
+    //     grid-template-columns: 1fr 1fr 1fr 1fr;
+    // }
+
+    &__nav-list-item {
+        display: inline;
+        list-style-type: none;
+    }
+}

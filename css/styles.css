@@ -1,0 +1,14 @@
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: min-content 1fr 1fr;
+}
+.header__nav-list-item {
+  display: inline;
+  list-style-type: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
