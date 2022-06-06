@@ -1,5 +1,33 @@
+@import '../node_modules/normalize.css/normalize.css';
+
+:root {
+    --dark-gray: #272727;
+    --light-gray: #f2f2f2;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration-line: none;
+    color: var(--dark-gray);
+
+    border-bottom: 1px dotted var(--dark-gray);
+
+    :visited {
+        color: var(--dark-gray);
+    }
+}
+
 body {
     font-family: 'Heebo', sans-serif;
+    background-color: var(--dark-gray);
+
+    .content {
+        max-width: 1064px;
+        margin: 0 auto;
+    }
 }
 
 @import './components/header.scss'
