@@ -3,7 +3,39 @@
     padding: 4rem;
     text-align: center;
 
+    &__heading {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    &__email-link {
+        font-size: 2rem;
+        font-weight: 400;
+        display: inline-block;
+        margin-bottom: 2rem;
+    }
+
     &__social-list {
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-template-columns: none;
+        gap: 1.5rem;
+        justify-content: center;
+
+        @include mobile-break {
+            grid-template-columns: min-content min-content min-content min-content;
+            grid-template-rows: none;
+            gap: 2rem;
+        }
+    }
+
+    &__social-list-item {
         list-style-type: none;
+    }
+
+    &__social-link {
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 1.25rem;
     }
 }

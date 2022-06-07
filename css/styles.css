@@ -331,8 +331,37 @@ body {
   padding: 4rem;
   text-align: center;
 }
+.footer__heading {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.footer__email-link {
+  font-size: 2rem;
+  font-weight: 400;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
 .footer__social-list {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: none;
+  gap: 1.5rem;
+  justify-content: center;
+}
+@media only screen and (min-width: 800px) {
+  .footer__social-list {
+    grid-template-columns: min-content min-content min-content min-content;
+    grid-template-rows: none;
+    gap: 2rem;
+  }
+}
+.footer__social-list-item {
   list-style-type: none;
+}
+.footer__social-link {
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.25rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
