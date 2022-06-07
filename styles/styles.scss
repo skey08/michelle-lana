@@ -8,23 +8,52 @@ $mobile-break: 800px;
 :root {
     // colors
     --dark-gray: #272727;
+    --middle-gray: #333;
     --light-gray: #f2f2f2;
+    --highlight: #f5d006;
 }
 
 body {
-    margin:0
+    margin: 0;
+    color: var(--dark-gray);
+    .reverse {
+        color: #fff;
+    }
 }
 
-h1,h2,h3,h4,h5,h6 {
-    font-weight: normal;
+main {
+    max-width: $content-width;
+    margin: 0 auto;
+    @include padding-mixin;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+p {
+    font-weight: 300;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding-top: 1rem;
 }
 
 a {
     text-decoration-line: none;
     color: var(--dark-gray);
-    border-bottom: 1px dotted var(--dark-gray);
+    border-bottom: 1px dashed var(--dark-gray);
     :visited {
         color: var(--dark-gray);
+    }
+
+    .reverse & {
+        color: #fff;
+        border-bottom: 1px dashed #fff;
+        :visited {
+            color: #fff;
+        } 
     }
 }
 
@@ -35,13 +64,10 @@ ul, li {
 body {
     font-family: 'Heebo', sans-serif;
     background-color: var(--dark-gray);
-
-    .content {
-        max-width: $content-width;
-        margin: 0 auto;
-
-        @include padding-mixin;
-    }
 }
 
 @import './components/header.scss';
+@import './components/blurb.scss';
+@import './components/cards.scss';
+@import './components/card.scss';
+@import './components/footer.scss';

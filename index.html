@@ -6,43 +6,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css">
     <title>Michelle Lana</title>
 </head>
 <body>
-    <section id="content" class="content">
-        <header class="header">
-            <div class="header__inner-wrapper">
-                <div class="header__name">
-                    <div class="header__logo-wrapper">
-                        <div class="header__hamburger">
-                            <div id="hamburger" class="hamburger">
-                                <span class="line"></span>
-                                <span class="line"></span>
-                                <span class="line"></span>
-                              </div>
-                        </div>
-                        <img role="presentation" class="header__logo" src="./assets/logo-lana.svg" alt="">
+    <header class="header">
+        <div class="header__inner-wrapper">
+            <div class="header__name">
+                <div class="header__logo-wrapper">
+                    <div class="header__hamburger">
+                        <div id="hamburger" class="hamburger">
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            <span class="line"></span>
+                            </div>
                     </div>
-                    <div class="header__headings">
-                        <h1 class="header__heading">Michelle Lana</h1>
-                        <h2 class="header__subheading">Visual Designer</h2>
-                    </div>
+                    <img role="presentation" class="header__logo" src="./assets/icons/logo-lana.svg" alt="">
                 </div>
-                <nav id="nav" class="header__nav">
-                    <ul class="header__nav-list">
-                        <li class="header__nav-list-item"><a href="/">Work</a></li>
-                        <li class="header__nav-list-item"><a href="">About</a></li>
-                        <li class="header__nav-list-item"><a href="">Resume</a></li>
-                        <li class="header__nav-list-item"><a href="">Contact</a></li>
-                    </ul>
-                </nav>
+                <div class="header__headings">
+                    <h1 class="header__heading">Michelle Lana</h1>
+                    <h2 class="header__subheading">Visual Designer</h2>
+                </div>
             </div>
-        </header>
-    </section>
-    <main></main>
-    <footer></footer>
+            <nav id="nav" class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-list-item"><a href="/">Work</a></li>
+                    <li class="header__nav-list-item"><a href="">About</a></li>
+                    <li class="header__nav-list-item"><a href="">Resume</a></li>
+                    <li class="header__nav-list-item"><a href="">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="blurb reverse">
+            <div class="blurb__heading-wrapper">
+                <h2 class="blurb__heading">My Work</h2>
+            </div>
+            <p class="blurb__text">My goal as a visual designer is to find ways for everyone to participate in a shared experience, recognize mismatched interactions and create meaningful and useful experiences for all people. </p>
+        </section>
+        <section class="cards reverse">
+            <div class="card">
+                <h3 class="card__category">Accessibility & Inclusion</h3>
+                <div class="card__wrapper">
+                    <h4 class="card__title">Cupcakes for Everyone</h4>
+                    <p class="card__text">Creating an accessible website using inclusive design principles.</p>
+                    <a class="card__link" href="">Read case study</a>
+                </div>
+                <div class="card__icon-wrapper">
+                    <img class="card__icon" src="./assets/icons/cupcakes-cs.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card__category">UI & Brand - Responsive Web</h3>
+                <div class="card__wrapper">
+                    <h4 class="card__title">NFO Page Redesign</h4>
+                    <p class="card__text">Building a strong brand and website to support valued members.</p>
+                    <a class="card__link" href="">Read case study</a>
+                </div>
+                <div class="card__icon-wrapper">
+                    <img class="card__icon" src="./assets/icons/nfo-cs.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card__category">UI Design - iOS Mobile</h3>
+                <div class="card__wrapper">
+                    <h4 class="card__title">Sukii</h4>
+                    <p class="card__text">Empowering a new grocery app for one of Manila's door-to-door services.</p>
+                    <a class="card__link" href="">Read case study</a>
+                </div>
+                <div class="card__icon-wrapper">
+                    <img class="card__icon" src="./assets/icons/sukii-cs.svg" alt="">
+                </div>
+            </div>
+            <div class="card">
+                <h3 class="card__category">Diversity & Inclusion</h3>
+                <div class="card__wrapper">
+                    <h4 class="card__title">People Library</h4>
+                    <p class="card__text">Representing diversity and inclusion through the power of illustration.</p>
+                    <a class="card__link" href="">Read case study</a>
+                </div>
+                <div class="card__icon-wrapper">
+                    <img class="card__icon" src="./assets/icons/people-cs.svg" alt="">
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer__heading">Let's Connect!</h2>
+        <a href="mailto: hello@mitchlana.com" class="footer__email-link">hello@mitchlana.com</a>
+        <ul class="footer_social-list">
+            <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">LinkedIn</a>
+            </li>
+            <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">Dribble</a>
+            </li>
+            <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">Instagram</a>
+            </li>
+            <li class="footer__social-list-item">
+                <a href="" class="footer__social-link">Twitters</a>
+            </li>
+        </ul>
+    </footer>
     <script type="text/javascript" src="./js/scripts.js"></script>
 </body>
 </html>
