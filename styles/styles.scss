@@ -1,6 +1,12 @@
 @import '../node_modules/normalize.css/normalize.css';
+@import 'mixins';
+
+// breakpoints
+$content-width: 1064px;
+$mobile-break: 800px;
 
 :root {
+    // colors
     --dark-gray: #272727;
     --light-gray: #f2f2f2;
 }
@@ -12,12 +18,14 @@ h1,h2,h3,h4,h5,h6 {
 a {
     text-decoration-line: none;
     color: var(--dark-gray);
-
     border-bottom: 1px dotted var(--dark-gray);
-
     :visited {
         color: var(--dark-gray);
     }
+}
+
+ul, li {
+    padding-inline-start: 0;
 }
 
 body {
@@ -25,9 +33,11 @@ body {
     background-color: var(--dark-gray);
 
     .content {
-        max-width: 1064px;
+        max-width: $content-width;
         margin: 0 auto;
+
+        @include padding-mixin;
     }
 }
 
-@import './components/header.scss'
+@import './components/header.scss';

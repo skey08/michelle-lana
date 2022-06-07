@@ -1,0 +1,27 @@
+.hamburger .line {
+    width: 25px;
+    height: 4px;
+    background-color: var(--dark-gray);
+    display: block;
+    margin: 4px auto;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover{
+    cursor: pointer;
+}
+
+
+#hamburger.is-active .line:nth-child(1){
+    transform: translateY(8px);
+}
+
+#hamburger.is-active .line:nth-child(3){
+    transform: translateY(-8px);
+}
+
+.hamburger {
+    @include mobile-break {
+        display: none;
+    }
+}

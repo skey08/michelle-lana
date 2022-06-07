@@ -1,0 +1,14 @@
+@mixin padding-mixin {
+    padding-left: 16px;
+        padding-right: 16px;
+        @media only screen and (min-width: $content-width) {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+}
+
+@mixin mobile-break {
+    @media only screen and (min-width: $mobile-break) {
+        @content;
+    }
+}
