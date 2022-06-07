@@ -276,6 +276,7 @@ ul, li {
   border-radius: 8px;
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
   border: 2px solid transparent;
+  display: grid;
 }
 .card:hover {
   box-shadow: 0 0 40px 0 rgba(245, 208, 6, 0.29);
@@ -323,18 +324,17 @@ ul, li {
   display: inline-block;
   margin-bottom: 2px;
 }
-.card__icon-wrapper {
+.card__icon {
+  width: 65%;
   display: none;
+  align-self: end;
+  justify-self: right;
   padding: 0 2rem 2rem 0;
-  justify-content: end;
 }
 @media only screen and (min-width: 800px) {
-  .card__icon-wrapper {
-    display: grid;
+  .card__icon {
+    display: block;
   }
-}
-.card__icon {
-  width: 100%;
 }
 
 .footer {
