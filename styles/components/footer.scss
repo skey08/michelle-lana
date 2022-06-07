@@ -13,6 +13,12 @@
         font-weight: 400;
         display: inline-block;
         margin-bottom: 2rem;
+        padding-bottom: 2px;
+
+        &:hover {
+            border-bottom: 3px solid var(--dark-gray);
+            padding-bottom: 0px;
+        }
     }
 
     &__social-list {
@@ -37,5 +43,9 @@
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.25rem;
+        
+        &:hover {
+            border-bottom: 3px solid var(--dark-gray);
+        }
     }
 }

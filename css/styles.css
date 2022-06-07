@@ -333,6 +333,9 @@ ul, li {
     display: grid;
   }
 }
+.card__icon {
+  width: 100%;
+}
 
 .footer {
   background: var(--light-gray);
@@ -348,6 +351,11 @@ ul, li {
   font-weight: 400;
   display: inline-block;
   margin-bottom: 2rem;
+  padding-bottom: 2px;
+}
+.footer__email-link:hover {
+  border-bottom: 3px solid var(--dark-gray);
+  padding-bottom: 0px;
 }
 .footer__social-list {
   display: grid;
@@ -370,6 +378,9 @@ ul, li {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 1.25rem;
+}
+.footer__social-link:hover {
+  border-bottom: 3px solid var(--dark-gray);
 }
 
 /*# sourceMappingURL=styles.css.map */
