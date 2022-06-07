@@ -27,8 +27,10 @@
     }
 
     &__text {
+        font-size: 1rem;
         @include mobile-break {
             max-width: 630px;
+            font-size: 1.25rem;
         }
     }
 

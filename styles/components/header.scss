@@ -54,11 +54,16 @@
         @include mobile-break {
             font-size: 2rem;
         }
+
+        a {
+            border-bottom: 0;
+        }
     }
 
     &__subheading {
         margin: 0;
         font-size: 1.15rem;
+        font-weight: 400;
     }
 
     &__nav {
@@ -98,6 +103,10 @@
             &:active, &:hover, &:focus {
                 border-bottom: 2px solid var(--dark-gray);
             }
+        }
+
+        &.active {
+            border-bottom: 3px solid var(--dark-gray);
         }
     }
 }

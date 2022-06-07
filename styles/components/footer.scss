@@ -2,4 +2,8 @@
     background: var(--light-gray);
     padding: 4rem;
     text-align: center;
+
+    &__social-list {
+        list-style-type: none;
+    }
 }
