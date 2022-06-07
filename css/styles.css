@@ -277,6 +277,7 @@ ul, li {
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
   border: 2px solid transparent;
   display: grid;
+  cursor: pointer;
 }
 .card:hover {
   box-shadow: 0 0 40px 0 rgba(245, 208, 6, 0.29);
