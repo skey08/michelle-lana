@@ -14,6 +14,8 @@ $mobile-break: 800px;
 }
 
 body {
+    font-family: 'Heebo', sans-serif;
+    background-color: var(--dark-gray);
     margin: 0;
     color: var(--dark-gray);
     .reverse {
@@ -61,10 +63,14 @@ ul, li {
     padding-inline-start: 0;
 }
 
-body {
-    font-family: 'Heebo', sans-serif;
-    background-color: var(--dark-gray);
-}
+.sr-only {
+    position:absolute;
+    left:-10000px;
+    top:auto;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    }
 
 @import './components/header.scss';
 @import './components/blurb.scss';

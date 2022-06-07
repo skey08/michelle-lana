@@ -7,6 +7,8 @@
 }
 
 body {
+  font-family: "Heebo", sans-serif;
+  background-color: var(--dark-gray);
   margin: 0;
   color: var(--dark-gray);
 }
@@ -60,9 +62,13 @@ ul, li {
   padding-inline-start: 0;
 }
 
-body {
-  font-family: "Heebo", sans-serif;
-  background-color: var(--dark-gray);
+.sr-only {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
 }
 
 .hamburger .line {
@@ -200,9 +206,9 @@ body {
   border-bottom: 0;
 }
 .header__nav-list-item a:active, .header__nav-list-item a:hover, .header__nav-list-item a:focus {
-  border-bottom: 2px solid var(--dark-gray);
+  border-bottom: 3px solid var(--dark-gray);
 }
-.header__nav-list-item.active {
+.header__nav-list-item a.active {
   border-bottom: 3px solid var(--dark-gray);
 }
 

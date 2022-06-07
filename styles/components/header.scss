@@ -101,12 +101,12 @@
         a {
             border-bottom: 0;
             &:active, &:hover, &:focus {
-                border-bottom: 2px solid var(--dark-gray);
+                border-bottom: 3px solid var(--dark-gray);
+            }
+            &.active {
+                border-bottom: 3px solid var(--dark-gray);
             }
         }
 
-        &.active {
-            border-bottom: 3px solid var(--dark-gray);
-        }
     }
 }
