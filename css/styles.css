@@ -3,6 +3,8 @@
   --middle-gray: #333;
   --light-gray: #f2f2f2;
   --highlight: #f5d006;
+  --light-blue: #0667ba;
+  --dark-blue: #0F3D70;
 }
 
 body {
@@ -50,15 +52,19 @@ a {
   color: var(--dark-gray);
   border-bottom: 1px dashed var(--dark-gray);
 }
-a :visited {
-  color: var(--dark-gray);
-}
 .reverse a {
   color: #fff;
   border-bottom: 1px dashed #fff;
 }
-.reverse a :visited {
-  color: #fff;
+
+a.retro-link {
+  text-decoration-line: none;
+  color: var(--light-blue);
+  border-bottom: 1px dashed var(--light-blue);
+}
+a.retro-link:hover {
+  color: var(--dark-blue);
+  border-bottom: 1px dashed var(--dark-blue);
 }
 
 ul, li {
