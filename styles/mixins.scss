@@ -12,3 +12,10 @@
         @content;
     }
 }
+
+@mixin breakout {
+    position: relative;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+}

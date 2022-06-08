@@ -1,0 +1,39 @@
+.circle-text {
+    background-color: #fff;
+    @include breakout;
+    padding: 2rem 1rem;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 1.75rem;
+    
+    @include mobile-break {
+        max-width: $content-width;
+        padding: 3rem 5rem;
+        flex-direction: row;
+        gap: 5rem;
+
+        &:first-child {
+            padding-top: 7rem;
+        }
+
+        &:last-child {
+            padding-bottom: 7rem;
+        }
+    }
+
+    &__text-heading {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+
+    &__text {
+        font-size: 1.25rem;
+        line-height: 1.7;
+    }
+
+    &__circle {
+        max-width: 300px;
+        margin: 0 auto;
+        align-self: flex-start;
+    }
+}

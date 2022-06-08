@@ -1,0 +1,16 @@
+.button {
+    border-bottom: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 1.5rem 2rem;
+    margin-top: .5rem;
+    background-color: var(--highlight);
+    display: inline-block;
+    border-radius: 8px;
+
+    &:hover {
+        background: var(--dark-gray);
+        color: #fff;
+    }
+}

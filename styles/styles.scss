@@ -1,4 +1,3 @@
-// @import '../node_modules/normalize.css/normalize.css';
 @import 'mixins';
 
 // breakpoints
@@ -21,6 +20,10 @@ body {
     .reverse {
         color: #fff;
     }
+}
+
+* {
+    box-sizing: border-box;
 }
 
 main {
@@ -77,3 +80,6 @@ ul, li {
 @import './components/cards.scss';
 @import './components/card.scss';
 @import './components/footer.scss';
+@import './components/circle-text.scss';
+@import './components/button.scss';
+@import './components/about.scss';
