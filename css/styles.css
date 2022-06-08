@@ -294,6 +294,7 @@ ul, li {
   letter-spacing: 1.6px;
   border-bottom: 1px solid #4d4c4c;
   padding: 1rem 1.5rem 0.5rem;
+  height: fit-content;
 }
 @media only screen and (min-width: 800px) {
   .card__category {
