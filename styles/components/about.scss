@@ -1,4 +1,7 @@
 .about {
-    margin-top: 5rem;
     margin-bottom: -5px;
+    
+    @include mobile-break {
+        margin-top: 5rem;
+    }
 }
