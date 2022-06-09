@@ -1,7 +1,12 @@
 .footer {
     background: var(--light-gray);
-    padding: 4rem;
     text-align: center;
+    padding: 4rem 1rem;
+
+    @include mobile-break {
+    padding: 4rem;
+
+    }
 
     &__heading {
         font-size: 2rem;

@@ -22,7 +22,7 @@ body {
     }
 }
 
-* {
+*, html, body {
     box-sizing: border-box;
 }
 
@@ -30,6 +30,11 @@ main {
     max-width: $content-width;
     margin: 0 auto;
     @include padding-mixin;
+    margin-top: 116px;
+
+    @include mobile-break {
+        margin-top: 0;
+    }
 }
 
 h1,h2,h3,h4,h5,h6,p {

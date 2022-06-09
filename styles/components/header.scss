@@ -1,11 +1,17 @@
 @import './hamburger.scss';
 
 .header {
-    position: relative;
+    position: fixed;
+    z-index: 1;
     width: 100vw;
     left: 50%;
     margin-left: -50vw;
     background-color: var(--light-gray);
+    top: 0;
+    
+    @include mobile-break {
+        position: relative;
+    }
     
     &__inner-wrapper {
         max-width: 1064px;

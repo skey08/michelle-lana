@@ -4,6 +4,7 @@
     box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
     border: 2px solid transparent;
     display: grid;
+    grid-template-rows: max-content;
     cursor: pointer;
 
     &:hover {

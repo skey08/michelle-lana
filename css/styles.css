@@ -17,7 +17,7 @@ body .reverse {
   color: #fff;
 }
 
-* {
+*, html, body {
   box-sizing: border-box;
 }
 
@@ -26,11 +26,17 @@ main {
   margin: 0 auto;
   padding-left: 16px;
   padding-right: 16px;
+  margin-top: 116px;
 }
 @media only screen and (min-width: 1064px) {
   main {
     padding-left: 0px;
     padding-right: 0px;
+  }
+}
+@media only screen and (min-width: 800px) {
+  main {
+    margin-top: 0;
   }
 }
 
@@ -108,11 +114,18 @@ ul, li {
 }
 
 .header {
-  position: relative;
+  position: fixed;
+  z-index: 1;
   width: 100vw;
   left: 50%;
   margin-left: -50vw;
   background-color: var(--light-gray);
+  top: 0;
+}
+@media only screen and (min-width: 800px) {
+  .header {
+    position: relative;
+  }
 }
 .header__inner-wrapper {
   max-width: 1064px;
@@ -223,7 +236,7 @@ ul, li {
 
 .blurb {
   margin-top: 2.5rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 .blurb__heading-wrapper {
   border-bottom: 5px solid var(--highlight);
@@ -241,7 +254,7 @@ ul, li {
 }
 .blurb__heading {
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   white-space: nowrap;
 }
 @media only screen and (min-width: 800px) {
@@ -287,6 +300,7 @@ ul, li {
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
   border: 2px solid transparent;
   display: grid;
+  grid-template-rows: max-content;
   cursor: pointer;
 }
 .card:hover {
@@ -351,8 +365,13 @@ ul, li {
 
 .footer {
   background: var(--light-gray);
-  padding: 4rem;
   text-align: center;
+  padding: 4rem 1rem;
+}
+@media only screen and (min-width: 800px) {
+  .footer {
+    padding: 4rem;
+  }
 }
 .footer__heading {
   font-size: 2rem;
@@ -422,7 +441,7 @@ ul, li {
 }
 .circle-text__text-heading {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0;
 }
 .circle-text__text {
   font-size: 1.25rem;
@@ -439,19 +458,26 @@ ul, li {
   font-size: 1.25rem;
   font-weight: 600;
   text-transform: uppercase;
-  padding: 1.5rem 2rem;
+  padding: 1rem 2.5rem;
   margin-top: 0.5rem;
   background-color: var(--highlight);
-  display: inline-block;
+  display: block;
   border-radius: 8px;
+  text-align: center;
 }
 .button:hover {
   background: var(--dark-gray);
   color: #fff;
 }
+@media only screen and (min-width: 800px) {
+  .button {
+    display: inline-block;
+  }
+}
 
 .about {
   margin-top: 5rem;
+  margin-bottom: -5px;
 }
 
 .image-block {
@@ -464,6 +490,9 @@ ul, li {
   .image-block {
     max-width: 1064px;
   }
+}
+.image-block img {
+  width: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
