@@ -1,0 +1,9 @@
+.action {
+    .fifty-fifty {
+        @include fifty-fifty;
+        padding-top: 4.5rem;
+    }
+    &__image {
+        padding-bottom: 1.15rem;
+    }
+}

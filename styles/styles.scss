@@ -2,6 +2,8 @@
 
 @import './base-styles.scss';
 
+@import './typography.scss';
+
 @import './components/header.scss';
 @import './components/blurb.scss';
 @import './components/cards.scss';
@@ -11,3 +13,5 @@
 @import './components/button.scss';
 @import './components/about.scss';
 @import './components/image-block.scss';
+@import './components/containers.scss';
+@import './components/action.scss';

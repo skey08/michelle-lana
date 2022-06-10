@@ -210,6 +210,7 @@ ul, li {
   grid-template-columns: none;
   gap: 2rem;
   margin-top: 0;
+  text-align: center;
 }
 @media only screen and (min-width: 800px) {
   .header__nav-list {
@@ -439,11 +440,11 @@ ul, li {
     padding-bottom: 7rem;
   }
 }
-.circle-text__text-heading {
+.circle-text h1.hwp, .circle-text h2.hwp, .circle-text h3.hwp, .circle-text h4.hwp, .circle-text h5.hwp, .circle-text h6.hwp {
   font-size: 2rem;
   margin-bottom: 0;
 }
-.circle-text__text {
+.circle-text p.hwp {
   font-size: 1.25rem;
   line-height: 1.7;
 }
@@ -497,6 +498,46 @@ ul, li {
 }
 .image-block img {
   width: 100%;
+}
+
+.container {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #fff;
+  padding: 7rem 5rem;
+}
+.container h1.hwp, .container h2.hwp, .container h3.hwp, .container h4.hwp, .container h5.hwp, .container h6.hwp {
+  font-size: 2rem;
+  margin-bottom: 0;
+}
+.container p.hwp {
+  font-size: 1.25rem;
+  line-height: 1.7;
+}
+@media only screen and (min-width: 800px) {
+  .container {
+    max-width: 1064px;
+  }
+}
+
+.action .fifty-fifty {
+  text-align: center;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: none;
+  gap: 1.25rem;
+  padding-top: 4.5rem;
+}
+@media only screen and (min-width: 800px) {
+  .action .fifty-fifty {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: none;
+  }
+}
+.action__image {
+  padding-bottom: 1.15rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -19,3 +19,16 @@
     left: 50%;
     transform: translateX(-50%);
 }
+
+@mixin fifty-fifty {
+    text-align: center;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: none;
+    gap: 1.25rem;
+    
+    @include mobile-break {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: none;
+    }
+}

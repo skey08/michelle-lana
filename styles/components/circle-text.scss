@@ -21,15 +21,7 @@
         }
     }
 
-    &__text-heading {
-        font-size: 2rem;
-        margin-bottom: 0;
-    }
-
-    &__text {
-        font-size: 1.25rem;
-        line-height: 1.7;
-    }
+    @include heading-with-paragraph;
 
     &__circle {
         max-width: 300px;

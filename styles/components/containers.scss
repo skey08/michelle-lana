@@ -1,0 +1,11 @@
+.container {
+    @include breakout;
+    background: #fff;
+    padding: 7rem 5rem;
+
+    @include heading-with-paragraph;
+
+    @include mobile-break {
+        max-width: $content-width;
+    }
+}

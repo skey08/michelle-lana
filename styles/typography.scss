@@ -1,0 +1,13 @@
+@mixin heading-with-paragraph {
+    h1, h2, h3, h4, h5, h6 {
+        &.hwp {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+    }
+
+    p.hwp {
+        font-size: 1.25rem;
+        line-height: 1.7;
+    } 
+}

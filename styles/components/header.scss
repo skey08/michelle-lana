@@ -90,6 +90,7 @@
         grid-template-columns: none;
         gap: 2rem;
         margin-top: 0;
+        text-align: center;
 
         @include mobile-break {
             grid-template-columns: min-content min-content min-content min-content;
