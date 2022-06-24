@@ -502,12 +502,20 @@ ul, li {
 }
 
 .container {
+  background: #fff;
+  padding-top: 3.5rem;
   position: relative;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
-  background: #fff;
-  padding: 7rem 5rem;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+@media only screen and (min-width: 1064px) {
+  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
 .container h1.hwp, .container h2.hwp, .container h3.hwp, .container h4.hwp, .container h5.hwp, .container h6.hwp {
   font-size: 2rem;
@@ -519,6 +527,7 @@ ul, li {
 }
 @media only screen and (min-width: 800px) {
   .container {
+    padding: 7rem 5rem;
     max-width: 1064px;
   }
 }
@@ -529,15 +538,22 @@ ul, li {
   grid-template-rows: 1fr 1fr;
   grid-template-columns: none;
   gap: 1.25rem;
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
   padding-top: 4.5rem;
 }
 @media only screen and (min-width: 800px) {
   .action .fifty-fifty {
+    max-width: 1064px;
+    width: 100%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: none;
   }
 }
 .action__image {
+  width: 100%;
   padding-bottom: 1.15rem;
 }
 
