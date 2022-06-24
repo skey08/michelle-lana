@@ -3,6 +3,17 @@
         @include fifty-fifty;
         padding-top: 4.5rem;
     }
+
+    &__heading {
+        padding-top: 1rem;
+        margin-bottom: 2.25rem;
+
+        @include mobile-break {
+            padding-top: 0;
+            margin-bottom: 0;
+        }
+    }
+
     &__image {
         width: 100%;
         padding-bottom: 1.15rem;

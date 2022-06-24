@@ -425,7 +425,7 @@ ul, li {
   padding: 2rem 1rem;
   display: flex;
   flex-direction: column-reverse;
-  gap: 1.75rem;
+  gap: 3rem;
 }
 @media only screen and (min-width: 800px) {
   .circle-text {
@@ -537,7 +537,6 @@ ul, li {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: none;
-  gap: 1.25rem;
   position: relative;
   width: 100vw;
   left: 50%;
@@ -549,7 +548,18 @@ ul, li {
     max-width: 1064px;
     width: 100%;
     grid-template-columns: 1fr 1fr;
+    column-gap: 1.25rem;
     grid-template-rows: none;
+  }
+}
+.action__heading {
+  padding-top: 1rem;
+  margin-bottom: 2.25rem;
+}
+@media only screen and (min-width: 800px) {
+  .action__heading {
+    padding-top: 0;
+    margin-bottom: 0;
   }
 }
 .action__image {

@@ -4,7 +4,7 @@
     padding: 2rem 1rem;
     display: flex;
     flex-direction: column-reverse;
-    gap: 1.75rem;
+    gap: 3rem;
     
     @include mobile-break {
         max-width: $content-width;

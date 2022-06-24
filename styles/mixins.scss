@@ -25,13 +25,13 @@
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none;
-    gap: 1.25rem;
     @include breakout;
-
+    
     @include mobile-break {
         max-width: $content-width;
         width: 100%;
         grid-template-columns: 1fr 1fr;
+        column-gap: 1.25rem;
         grid-template-rows: none;
     }
 }
