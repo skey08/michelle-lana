@@ -75,9 +75,11 @@
     &__nav {
         display: none;
         transition: all 0.3s ease-in-out;
+        padding: 5rem;
 
         @include mobile-break {
             display: block;
+            padding: 0;
         }
         &.is-active {
             display: block;
