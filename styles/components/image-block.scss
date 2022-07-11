@@ -1,5 +1,6 @@
 .image-block {
     @include breakout;
+    line-height: 0;
     
     @include mobile-break {
         max-width: $content-width;

@@ -1,0 +1,13 @@
+.default-ordered {
+    max-width: 535px;
+    padding-left: 1rem;
+    font-size: 1rem;
+
+    li {
+        padding-bottom: 1.25rem;
+    }
+
+    @include mobile-break {
+        font-size: 1.25rem;
+    }
+}

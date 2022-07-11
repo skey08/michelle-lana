@@ -9,4 +9,8 @@
         padding: 7rem 5rem;
         max-width: $content-width;
     }
+    &_slim {
+        max-width: 653px;
+        margin: 0 auto;
+    }
 }

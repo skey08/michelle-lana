@@ -11,3 +11,33 @@
         line-height: 1.7;
     } 
 }
+
+.heading_large {
+    font-size: 1.75rem;
+    margin-bottom: 0;
+
+    @include mobile-break {
+        font-size: 2rem;
+        margin-bottom: .5rem;
+    }
+}
+
+.heading_small {
+    font-size: 1.25rem;
+
+    @include mobile-break {
+        font-size: 1.5rem;
+    }
+}
+
+.subtext {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: 2.5rem;
+
+    @include mobile-break {
+        font-size: 1.5rem;
+        line-height: 1.75;
+        margin-bottom: 1.75rem;
+    }
+}
