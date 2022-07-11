@@ -122,10 +122,11 @@ ul, li {
 
 .default-ordered {
   max-width: 535px;
+  margin-bottom: 0;
   padding-left: 1rem;
   font-size: 1rem;
 }
-.default-ordered li {
+.default-ordered li:not(:last-child) {
   padding-bottom: 1.25rem;
 }
 @media only screen and (min-width: 800px) {

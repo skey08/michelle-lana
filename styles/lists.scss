@@ -1,9 +1,10 @@
 .default-ordered {
     max-width: 535px;
+    margin-bottom: 0;
     padding-left: 1rem;
     font-size: 1rem;
 
-    li {
+    li:not(:last-child) {
         padding-bottom: 1.25rem;
     }
 
