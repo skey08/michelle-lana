@@ -11,4 +11,38 @@
     @include mobile-break {
         font-size: 1.25rem;
     }
+
+}
+
+.two-column {
+    list-style-type: none;
+    counter-reset: item;
+    @include mobile-break {
+        display: grid;
+        column-gap: 4rem;
+        grid-template-columns: repeat(auto-fill, minmax(400px,1fr));
+    }
+
+    li {
+        counter-increment: item;
+        position: relative;
+
+        &:before {
+            content:'';
+            position: absolute;
+            background: var(--dark-gray);
+            border-radius: 100%;
+            width: 2em;
+            height: 2rem;
+            text-align: center;
+            left: -45px;
+        }
+        &:after {
+            content: counter(item);
+            position: absolute;
+            color: #fff;
+            top: 8px;
+            left: -34px;
+        }
+    }
 }

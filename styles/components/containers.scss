@@ -1,5 +1,9 @@
 .container {
     background: #fff;
+    &_gray {
+        background: var(--light-gray);
+    }
+
     padding-top: 3.5rem;
     @include breakout;
     @include padding-mixin;

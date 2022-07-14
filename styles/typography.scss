@@ -15,6 +15,9 @@
 .heading_large {
     font-size: 1.75rem;
     margin-bottom: 0;
+    &_center {
+        text-align: center;
+    }
 
     @include mobile-break {
         font-size: 2rem;
@@ -39,5 +42,38 @@
         font-size: 1.5rem;
         line-height: 1.75;
         margin-bottom: 1.75rem;
+    }
+}
+
+.text_16-20 {
+    font-size: 1rem;
+    @include mobile-break {
+        font-size: 1.5rem;
+    }
+}
+
+// padding and spacing
+
+.remove-padding-top {
+    padding-top: 0;
+}
+
+.remove-padding-bottom {
+    padding-bottom: 0;
+}
+
+.remove-margin-top {
+    margin-top: 0;
+}
+
+.remove-margin-bottom {
+    margin-bottom: 0;
+}
+
+.padding-bottom_24-48 {
+    padding-bottom: 1.75rem;
+
+    @include mobile-break {
+        padding-bottom: 3rem;
     }
 }
