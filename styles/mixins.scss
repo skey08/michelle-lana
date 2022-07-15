@@ -21,11 +21,13 @@
 }
 
 @mixin fifty-fifty {
-    text-align: center;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: none;
-    @include breakout;
+    
+    &__stretched {
+        @include breakout;
+    }
     
     @include mobile-break {
         max-width: $content-width;
@@ -35,3 +37,4 @@
         grid-template-rows: none;
     }
 }
+

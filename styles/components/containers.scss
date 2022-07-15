@@ -13,8 +13,18 @@
         padding: 7rem 5rem;
         max-width: $content-width;
     }
-    &_slim {
-        max-width: 653px;
+    &_medium {
+        max-width: 750px;
         margin: 0 auto;
     }
+    &_slim {
+        max-width: 650px;
+        margin: 0 auto;
+    }
+
+}
+
+
+.fifty-fifty {
+    @include fifty-fifty;
 }

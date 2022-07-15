@@ -123,11 +123,56 @@ ul, li {
   }
 }
 
+.callout {
+  text-transform: uppercase;
+  font-weight: 200;
+  letter-spacing: 1.6px;
+}
+
+.center {
+  text-align: center;
+}
+
+.blockquote {
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media only screen and (min-width: 800px) {
+  .blockquote {
+    font-size: 2.25rem;
+  }
+}
+.blockquote:before {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 5px;
+  background-color: var(--highlight);
+  margin: 0.5em auto;
+}
+.blockquote:after {
+  content: "";
+  display: block;
+  width: 96px;
+  height: 5px;
+  background-color: var(--highlight);
+  margin: 0.5em auto;
+}
+
 .text_16-20 {
   font-size: 1rem;
 }
 @media only screen and (min-width: 800px) {
   .text_16-20 {
+    font-size: 1.25rem;
+  }
+}
+
+.text_20-24 {
+  font-size: 1.25rem;
+}
+@media only screen and (min-width: 800px) {
+  .text_20-24 {
     font-size: 1.5rem;
   }
 }
@@ -157,6 +202,11 @@ ul, li {
   }
 }
 
+.center-img {
+  max-width: 80%;
+  margin: 0 auto;
+}
+
 .default-ordered {
   max-width: 535px;
   margin-bottom: 0;
@@ -180,7 +230,7 @@ ul, li {
   .two-column {
     display: grid;
     column-gap: 4rem;
-    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   }
 }
 .two-column li {
@@ -704,21 +754,47 @@ ul, li {
     max-width: 1064px;
   }
 }
+.container_medium {
+  max-width: 750px;
+  margin: 0 auto;
+}
 .container_slim {
-  max-width: 653px;
+  max-width: 650px;
   margin: 0 auto;
 }
 
-.action .fifty-fifty {
-  text-align: center;
+.fifty-fifty {
   display: grid;
   grid-template-rows: 1fr 1fr;
   grid-template-columns: none;
+}
+.fifty-fifty__stretched {
   position: relative;
   width: 100vw;
   left: 50%;
   transform: translateX(-50%);
+}
+@media only screen and (min-width: 800px) {
+  .fifty-fifty {
+    max-width: 1064px;
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.25rem;
+    grid-template-rows: none;
+  }
+}
+
+.action .fifty-fifty {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: none;
   padding-top: 4.5rem;
+}
+.action .fifty-fifty__stretched {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
 }
 @media only screen and (min-width: 800px) {
   .action .fifty-fifty {
