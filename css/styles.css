@@ -99,6 +99,11 @@ ul, li {
   }
 }
 
+.heading_large_slim {
+  font-size: 2rem;
+  line-height: 1.7;
+}
+
 .heading_medium {
   font-size: 1.25rem;
   font-weight: 600;
@@ -137,8 +142,16 @@ ul, li {
   text-align: center;
 }
 
-.extra-bold {
+.text-align-right {
+  text-align: right;
+}
+
+.bold {
   font-weight: 600;
+}
+
+.extra-bold {
+  font-weight: 900;
 }
 
 .blockquote {
@@ -709,8 +722,8 @@ ul, li {
 }
 @media only screen and (min-width: 800px) {
   .circle-text {
-    max-width: 1064px;
-    padding: 3rem 5rem;
+    width: 100%;
+    padding: 3rem 0;
     flex-direction: row;
     gap: 5rem;
   }
@@ -733,6 +746,12 @@ ul, li {
   max-width: 300px;
   margin: 0 auto;
   align-self: flex-start;
+}
+@media only screen and (min-width: 800px) {
+  .container_gray .circle-text {
+    max-width: 1064px;
+    padding: 3rem 5rem;
+  }
 }
 
 .button {

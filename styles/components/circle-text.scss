@@ -7,8 +7,9 @@
     gap: 3rem;
     
     @include mobile-break {
-        max-width: $content-width;
-        padding: 3rem 5rem;
+        // max-width: $content-width;
+        width: 100%;
+        padding: 3rem 0;
         flex-direction: row;
         gap: 5rem;
 
@@ -27,5 +28,12 @@
         max-width: 300px;
         margin: 0 auto;
         align-self: flex-start;
+    }
+
+    .container_gray & {
+        @include mobile-break {
+            max-width: $content-width;
+            padding: 3rem 5rem;
+        }
     }
 }
