@@ -15,9 +15,7 @@
 .heading_large {
     font-size: 1.75rem;
     margin-bottom: 0;
-    &_center {
-        text-align: center;
-    }
+    font-weight: 600;
 
     @include mobile-break {
         font-size: 2rem;
@@ -25,12 +23,18 @@
     }
 }
 
-.heading_small {
+.heading_medium {
     font-size: 1.25rem;
+    font-weight: 600;
 
     @include mobile-break {
         font-size: 1.5rem;
     }
+}
+
+.heading_small {
+    font-size: 1.25rem;
+    font-weight: 600;
 }
 
 .subtext {
@@ -45,7 +49,7 @@
     }
 }
 
-.callout {
+.all-caps {
     text-transform: uppercase;
     font-weight: 200;
     letter-spacing: 1.6px;
@@ -55,12 +59,18 @@
     text-align: center;
 }
 
+.extra-bold {
+    font-weight: 600;
+}
+
 .blockquote {
     font-size: 1.5rem;
     text-align: center;
     
     @include mobile-break {
         font-size: 2.25rem;
+        max-width: 740px;
+        width: 100%;
     }
     &:before{
         content: "";
@@ -118,9 +128,4 @@
     @include mobile-break {
         padding-bottom: 3rem;
     }
-}
-
-.center-img {
-    max-width: 80%;
-    margin: 0 auto;
 }

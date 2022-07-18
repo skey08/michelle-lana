@@ -1,22 +1,52 @@
 .default-ordered {
     max-width: 535px;
     margin-bottom: 0;
-    padding-left: 1rem;
+    padding-left: 0;
     font-size: 1rem;
+    list-style-position: inside;
 
     li:not(:last-child) {
         padding-bottom: 1.25rem;
     }
 
+    li {
+        line-height: 1.5;
+    }
+
     @include mobile-break {
         font-size: 1.25rem;
+        li {
+            line-height: 1.7;
+        }
     }
 
 }
 
-.two-column {
+.alphabet {
+    list-style-type: lower-alpha;
+    padding-left: 0;
+    list-style-position: inside;
+
+    li {
+        margin-bottom: 0;
+        line-height: 1.5;
+    }
+
+    @include mobile-break {
+        li {
+            line-height: 1.7;
+        }
+    }
+}
+
+.two-column-circles {
     list-style-type: none;
     counter-reset: item;
+
+    > * {
+        padding-left: 1rem;
+    }
+
     @include mobile-break {
         display: grid;
         column-gap: 4rem;
@@ -32,17 +62,51 @@
             position: absolute;
             background: var(--dark-gray);
             border-radius: 100%;
-            width: 2em;
-            height: 2rem;
+            width: 2.5em;
+            height: 2.5rem;
             text-align: center;
             left: -45px;
         }
         &:after {
             content: counter(item);
             position: absolute;
+            font-size: 1.5rem;
             color: #fff;
             top: 8px;
-            left: -34px;
+            left: -32px;
+        }
+    }
+}
+
+.single-column-circles {
+    list-style-type: none;
+    counter-reset: item;
+    
+    > * {
+        padding-left: 1rem;
+    }
+
+    li {
+        counter-increment: item;
+        position: relative;
+
+        &:before {
+            content:'';
+            position: absolute;
+            background: var(--dark-gray);
+            border-radius: 100%;
+            width: 2.5em;
+            height: 2.5rem;
+            text-align: center;
+            left: -45px;
+        }
+        &:after {
+            content: counter(item);
+            position: absolute;
+            font-size: 1.5rem;
+            color: #fff;
+            top: 8px;
+            left: -32px;
         }
     }
 }

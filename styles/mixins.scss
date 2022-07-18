@@ -20,6 +20,8 @@
     transform: translateX(-50%);
 }
 
+
+
 @mixin fifty-fifty {
     display: grid;
     grid-template-rows: 1fr 1fr;
@@ -28,7 +30,7 @@
     &__stretched {
         @include breakout;
     }
-    
+
     @include mobile-break {
         max-width: $content-width;
         width: 100%;
