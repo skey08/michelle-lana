@@ -79,11 +79,13 @@
 .blockquote {
     font-size: 1.5rem;
     text-align: center;
+    max-width: 880px;
+    width: 100%;
+    margin: 0 auto;
     
     @include mobile-break {
         font-size: 2.25rem;
-        max-width: 740px;
-        width: 100%;
+        
     }
     &:before{
         content: "";
@@ -114,31 +116,5 @@
     font-size: 1.25rem;
     @include mobile-break {
         font-size: 1.5rem;
-    }
-}
-
-// padding and spacing
-
-.remove-padding-top {
-    padding-top: 0;
-}
-
-.remove-padding-bottom {
-    padding-bottom: 0;
-}
-
-.remove-margin-top {
-    margin-top: 0;
-}
-
-.remove-margin-bottom {
-    margin-bottom: 0;
-}
-
-.padding-bottom_24-48 {
-    padding-bottom: 1.75rem;
-
-    @include mobile-break {
-        padding-bottom: 3rem;
     }
 }

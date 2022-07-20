@@ -57,6 +57,20 @@
         counter-increment: item;
         position: relative;
 
+        > * {
+            margin-bottom: .5rem;
+        }
+
+        &:last-of-type {
+            :last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &:not(:last-child) {
+            padding-bottom: .5rem;
+        }
+
         &:before {
             content:'';
             position: absolute;
@@ -81,7 +95,7 @@
 .single-column-circles {
     list-style-type: none;
     counter-reset: item;
-    
+
     > * {
         padding-left: 1rem;
     }

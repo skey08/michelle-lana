@@ -157,12 +157,13 @@ ul, li {
 .blockquote {
   font-size: 1.5rem;
   text-align: center;
+  max-width: 880px;
+  width: 100%;
+  margin: 0 auto;
 }
 @media only screen and (min-width: 800px) {
   .blockquote {
     font-size: 2.25rem;
-    max-width: 740px;
-    width: 100%;
   }
 }
 .blockquote:before {
@@ -225,6 +226,23 @@ ul, li {
   }
 }
 
+.container-padding {
+  padding: 3rem 0;
+}
+@media only screen and (min-width: 800px) {
+  .container-padding {
+    padding: 7rem 0;
+  }
+}
+.container-padding_collapse-bottom {
+  padding: 3rem 0 0;
+}
+@media only screen and (min-width: 800px) {
+  .container-padding_collapse-bottom {
+    padding: 7rem 0 0;
+  }
+}
+
 .default-ordered {
   max-width: 535px;
   margin-bottom: 0;
@@ -279,6 +297,15 @@ ul, li {
 .two-column-circles li {
   counter-increment: item;
   position: relative;
+}
+.two-column-circles li > * {
+  margin-bottom: 0.5rem;
+}
+.two-column-circles li:last-of-type :last-child {
+  margin-bottom: 0;
+}
+.two-column-circles li:not(:last-child) {
+  padding-bottom: 0.5rem;
 }
 .two-column-circles li:before {
   content: "";
@@ -824,7 +851,6 @@ ul, li {
 
 .container {
   background: #fff;
-  padding-top: 3.5rem;
   position: relative;
   width: 100vw;
   left: 50%;
@@ -851,7 +877,6 @@ ul, li {
 }
 @media only screen and (min-width: 800px) {
   .container {
-    padding: 7rem 5rem;
     max-width: 1064px;
   }
 }

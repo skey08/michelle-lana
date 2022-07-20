@@ -4,13 +4,11 @@
         background: var(--light-gray);
     }
 
-    padding-top: 3.5rem;
     @include breakout;
     @include padding-mixin;
     @include heading-with-paragraph;
 
     @include mobile-break {
-        padding: 7rem 5rem;
         max-width: $content-width;
     }
     &_medium {
@@ -21,7 +19,6 @@
         max-width: 650px;
         margin: 0 auto;
     }
-
 }
 
 
