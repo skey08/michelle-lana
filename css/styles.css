@@ -160,6 +160,7 @@ ul, li {
   max-width: 880px;
   width: 100%;
   margin: 0 auto;
+  padding: 7rem 0;
 }
 @media only screen and (min-width: 800px) {
   .blockquote {
@@ -201,6 +202,15 @@ ul, li {
   }
 }
 
+.rte .heading_medium {
+  display: block;
+  margin-bottom: 0;
+}
+.rte .all-caps {
+  border: 1px solid red;
+  margin-bottom: 0.75rem;
+}
+
 .remove-padding-top {
   padding-top: 0;
 }
@@ -226,6 +236,15 @@ ul, li {
   }
 }
 
+.padding-bottom_48-64 {
+  padding-bottom: 3rem;
+}
+@media only screen and (min-width: 800px) {
+  .padding-bottom_48-64 {
+    padding-bottom: 4rem;
+  }
+}
+
 .container-padding {
   padding: 3rem 0;
 }
@@ -240,6 +259,14 @@ ul, li {
 @media only screen and (min-width: 800px) {
   .container-padding_collapse-bottom {
     padding: 7rem 0 0;
+  }
+}
+.container-padding_slim {
+  padding: 3.5rem 0;
+}
+@media only screen and (min-width: 800px) {
+  .container-padding_slim {
+    padding: 4rem 0;
   }
 }
 

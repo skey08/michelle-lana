@@ -22,6 +22,14 @@
     }
 }
 
+.padding-bottom_48-64 {
+    padding-bottom: 3rem;
+
+    @include mobile-break {
+        padding-bottom: 4rem;
+    }
+}
+
 .container-padding {
     padding: 3rem 0;
 
@@ -36,5 +44,12 @@
             padding: 7rem 0 0;
         } 
     }
-}
 
+    &_slim {
+        padding: 3.5rem 0;
+
+        @include mobile-break {
+            padding: 4rem 0;
+        }
+    }
+}
