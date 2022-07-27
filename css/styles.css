@@ -589,7 +589,7 @@ ul, li {
 }
 @media only screen and (min-width: 800px) {
   .blurb-stacked {
-    padding: 4rem 0;
+    padding: 4rem 0 2.5rem;
   }
 }
 .blurb-stacked__heading {
@@ -822,12 +822,6 @@ ul, li {
 .about {
   margin-bottom: -5px;
 }
-@media only screen and (min-width: 800px) {
-  .about {
-    margin-top: 5rem;
-  }
-}
-
 .image-block {
   position: relative;
   width: 100vw;
