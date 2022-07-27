@@ -1,25 +1,13 @@
 .circle-text {
     background-color: #fff;
-    @include breakout;
-    padding: 2rem 1rem;
     display: flex;
     flex-direction: column-reverse;
     gap: 3rem;
     
     @include mobile-break {
-        // max-width: $content-width;
         width: 100%;
-        padding: 3rem 0;
         flex-direction: row;
         gap: 5rem;
-
-        &:first-child {
-            padding-top: 7rem;
-        }
-
-        &:last-child {
-            padding-bottom: 7rem;
-        }
     }
 
     @include heading-with-paragraph;

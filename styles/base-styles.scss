@@ -13,6 +13,7 @@ $mobile-break: 800px;
 }
 
 body {
+    position: relative;
     font-family: 'Heebo', sans-serif;
     background-color: var(--dark-gray);
     margin: 0;
@@ -27,6 +28,7 @@ body {
 }
 
 main {
+    position: relative;
     max-width: $content-width;
     margin: 0 auto;
     @include padding-mixin;

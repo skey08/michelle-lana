@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="./css/styles.css">
     <title>Michelle Lana</title>
 </head>
-<body>
+<body id="body">
     <header class="header">
         <div class="header__inner-wrapper">
             <div class="header__name">
@@ -210,17 +210,19 @@
                 <p class="text_16-20">I started creating the branding elements and illustration pieces in Adobe Illustrator to move forward with the design. After I had a look and feel down, I moved over to Adobe XD and created a quick style guide to capture styling elements such as color, typography, buttons, links, icons, and, most importantly, accessibility annotations. Providing a style guide and additional accessibility notes is essential during design-to-dev handoffs.</p>
             </div>
             <blockquote class="blockquote">“It is always essential to identify the assumptions that we have built into any product we design.”</blockquote>
-            <div class="container_slim">
+            <div class="container_slim padding-bottom_24-48">
                 <span class="heading_small">Stark, I love you!</span>
                 <p class="text_16-20">Before handing off my visual mocks and style guide for development, I always make sure that I fire up Stark. Never assume that your color combination is good enough. It is always essential to identify the assumptions we have built into any product we design. If someone is color-blind, they should still differentiate between distinct elements of your design. I used Stark to test the page to simulate colorblindness to see what the site would look like for folks who are colorblind.</p>
-                <div class="circle-text">
+            </div>
+            <div class="container_slim">
+                <div class="circle-text padding-bottom_48-64">
                     <div class="circle-text__text">
                         <span class="heading_small">Interaction Design</span>
                         <p class="text_16-20">Ensure that related content and controls are grouped together. This will make it easier to understand and easier to reach people with motor disabilities.</p>
                     </div>
                     <img class="circle-text__circle" src="./assets/circle.svg"></img>
                 </div>
-                <div class="circle-text">
+                <div class="circle-text padding-bottom_48-64">
                     <div class="circle-text__text">
                         <span class="heading_small">UX Writing</span>
                         <p class="text_16-20">Guide all users with accessible on-screen text. Write accessory labels and be a champion for screen reader users.</p>
@@ -298,18 +300,20 @@
                 </div>
             </div>
             <blockquote class="blockquote">“We should've properly labeled our button text to describe its purpose and destination (i.e., Submit Your Order vs. Submit).”</blockquote>
-            <div class="circle-text">
-                <div class="circle-text__text">
-                    <span class="heading_small">Location of Error Messaging</span>
-                    <p class="text_16-20">Our participant revealed that he had difficulty identifying the error message when he did not select a cupcake when he submitted his order.</p>
+            <div class="container_slim padding-bottom_48-64">
+                <div class="circle-text">
+                    <div class="circle-text__text">
+                        <span class="heading_small">Location of Error Messaging</span>
+                        <p class="text_16-20">Our participant revealed that he had difficulty identifying the error message when he did not select a cupcake when he submitted his order.</p>
+                    </div>
+                    <img class="circle-text__circle" src="./assets/circle.svg"></img>
                 </div>
-                <img class="circle-text__circle" src="./assets/circle.svg"></img>
             </div>
             <div class="container container_gray container-padding">
                 <div class="container_slim">
                     <h2 class="heading_large center padding-bottom_48-64">Outcome and Impact</h2>
                     <h3 class="all-caps">Reflections and What I Learned</h3>
-                    <p class="text_20-24">We realized that we still missed a few crucial steps to make our product accessible, even for a simple one-pager site with limited features. We were confident that we had everything figured out, but we, unfortunately, failed to challenge our assumptions and recognize our biases and preferences. It is a great lesson to remember that we are not our users. Therefore, it is vital to include different perspectives and prioritize inclusion at critical points in the design and development process.</p>
+                    <p class="text_20-24 padding-bottom_48-64">We realized that we still missed a few crucial steps to make our product accessible, even for a simple one-pager site with limited features. We were confident that we had everything figured out, but we, unfortunately, failed to challenge our assumptions and recognize our biases and preferences. It is a great lesson to remember that we are not our users. Therefore, it is vital to include different perspectives and prioritize inclusion at critical points in the design and development process.</p>
                     <h3 class="heading_small">Key Takeaways:</h3>
                     <ol class="single-column-circles">
                         <li>
@@ -329,11 +333,16 @@
                 </div>
             </div>
         </section>
-        <section class="container text-align-right">
-            <p class="all-caps extra-bold remove-margin-bottom">Next Case Study</p>
-            <a href="" class="retro-link heading_large_slim">NFO Redesign</a>
+        <section class="container text-align-right container-padding_slim">
+            <div class="container_large">
+                <p class="all-caps extra-bold remove-margin-bottom">Next Case Study</p>
+                <a href="" class="retro-link heading_large_slim">NFO Redesign</a>
+            </div>
         </section>
     </main>
+    <div id="back-to-top" class="back-to-top">
+        <button class="back-to-top__button" onclick="scrollToTop(300);"><span>Top</span></button>
+    </div>
     <footer class="footer">
         <h2 class="footer__heading">Let's Connect!</h2>
         <a href="mailto: hello@mitchlana.com" class="footer__email-link">hello@mitchlana.com</a>

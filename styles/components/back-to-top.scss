@@ -1,0 +1,27 @@
+.back-to-top {
+    position: fixed;
+    display: none;
+    max-width: 940px;
+    width: 100%;
+    right: 0;
+    bottom: 3rem;
+    text-align: right;
+    left: 50%;
+    transform: translateX(-50%);
+    @include padding-mixin;
+    
+    &__button {
+        color: #fff;
+        background-color: var(--light-blue);
+        border: 0;
+        border-radius: 50%;
+        height: 55px;
+        width: 55px;
+    }
+    &.show {
+        display: block;
+    }
+    &.hide {
+        display: none;
+    }
+}

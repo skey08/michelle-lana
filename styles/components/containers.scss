@@ -11,6 +11,10 @@
     @include mobile-break {
         max-width: $content-width;
     }
+    &_large {
+        max-width: 940px;
+        margin: 0 auto;
+    }
     &_medium {
         max-width: 750px;
         margin: 0 auto;
