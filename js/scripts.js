@@ -16,9 +16,7 @@ const showHideBackToTop = function() {
   var y = window.scrollY;
   if (y >= 800) {
     button.classList.add("show");
-    button.classList.remove("hide");
   } else {
-    button.classList.add("hide");
     button.classList.remove("show");
   }
 };

@@ -1,6 +1,7 @@
 .back-to-top {
     position: fixed;
-    display: none;
+    opacity: 0;
+    transition: opacity .5s ease-in;
     max-width: 940px;
     width: 100%;
     right: 0;
@@ -11,17 +12,11 @@
     @include padding-mixin;
     
     &__button {
-        color: #fff;
-        background-color: var(--light-blue);
         border: 0;
-        border-radius: 50%;
-        height: 55px;
-        width: 55px;
+        background-color: transparent;
     }
     &.show {
-        display: block;
-    }
-    &.hide {
-        display: none;
+        opacity: 1;
+        transition: opacity .5s ease-in;
     }
 }
