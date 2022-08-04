@@ -441,9 +441,7 @@ ul, li {
 .header {
   position: fixed;
   z-index: 1;
-  width: 100vw;
-  left: 50%;
-  margin-left: -50vw;
+  width: 100%;
   background-color: var(--light-gray);
   top: 0;
 }
@@ -989,12 +987,15 @@ ul, li {
 
 .back-to-top {
   position: fixed;
+  display: block;
   opacity: 0;
   transition: opacity 0.5s ease-in;
-  max-width: 940px;
-  right: 0;
+  max-width: 1064px;
+  width: 100%;
   bottom: 3rem;
   text-align: right;
+  left: 50%;
+  transform: translateX(-55%);
   padding-left: 16px;
   padding-right: 16px;
 }
@@ -1011,6 +1012,9 @@ ul, li {
 .back-to-top.show {
   opacity: 1;
   transition: opacity 0.5s ease-in;
+}
+.back-to-top img {
+  width: 52px;
 }
 
 /*# sourceMappingURL=styles.css.map */

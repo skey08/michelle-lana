@@ -1,14 +1,15 @@
 .back-to-top {
     position: fixed;
+    display: block;
     opacity: 0;
     transition: opacity .5s ease-in;
-    max-width: 940px;
-    // width: 100%;
-    right: 0;
+    max-width: 1064px;
+    width: 100%;
+    // right: 0;
     bottom: 3rem;
     text-align: right;
-    // left: 50%;
-    // transform: translateX(-50%);
+    left: 50%;
+    transform: translateX(-55%);
     @include padding-mixin;
     
     &__button {
@@ -18,5 +19,9 @@
     &.show {
         opacity: 1;
         transition: opacity .5s ease-in;
+    }
+
+    img {
+        width: 52px;
     }
 }
