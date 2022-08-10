@@ -3,13 +3,8 @@
     display: block;
     opacity: 0;
     transition: opacity .5s ease-in;
-    max-width: 1064px;
-    width: 100%;
-    // right: 0;
+    right: 2rem;
     bottom: 3rem;
-    text-align: right;
-    left: 50%;
-    transform: translateX(-55%);
     @include padding-mixin;
     
     &__button {

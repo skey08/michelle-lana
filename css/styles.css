@@ -189,6 +189,7 @@ ul, li {
 
 .text_16-20 {
   font-size: 1rem;
+  line-height: 1.65;
 }
 @media only screen and (min-width: 800px) {
   .text_16-20 {
@@ -990,12 +991,8 @@ ul, li {
   display: block;
   opacity: 0;
   transition: opacity 0.5s ease-in;
-  max-width: 1064px;
-  width: 100%;
+  right: 2rem;
   bottom: 3rem;
-  text-align: right;
-  left: 50%;
-  transform: translateX(-55%);
   padding-left: 16px;
   padding-right: 16px;
 }
