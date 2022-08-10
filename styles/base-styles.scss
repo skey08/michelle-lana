@@ -31,6 +31,7 @@ main {
     position: relative;
     max-width: $content-width;
     margin: 0 auto;
+    overflow-x: hidden;
     @include padding-mixin;
     margin-top: 116px;
 

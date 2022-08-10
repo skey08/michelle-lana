@@ -26,6 +26,7 @@ main {
   position: relative;
   max-width: 1064px;
   margin: 0 auto;
+  overflow-x: hidden;
   padding-left: 16px;
   padding-right: 16px;
   margin-top: 116px;
