@@ -6,6 +6,12 @@ document.addEventListener('DOMContentLoaded', function() {
         burger.addEventListener('click', function() {
             burger.classList.toggle('is-active');
             nav.classList.toggle('is-active');
+            if (burger.attributes['aria-expanded'].value === 'false') {
+                console.log("hellooo")
+                burger.attributes['aria-expanded'].value = 'true'
+            } else {
+                burger.attributes['aria-expanded'].value = 'false'
+            }
         })
     });
 });
