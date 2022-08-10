@@ -17,11 +17,11 @@
             <div class="header__name">
                 <div class="header__logo-wrapper">
                     <div class="header__hamburger">
-                        <div id="hamburger" class="hamburger">
+                        <button id="hamburger" class="hamburger" aria-expanded="false">
                             <span class="line"></span>
                             <span class="line"></span>
                             <span class="line"></span>
-                            </div>
+                        </button>
                     </div>
                     <a href="/">
                         <span class="sr-only">Homepage Link</span>
@@ -44,7 +44,12 @@
         </div>
     </header>
     <main>
-
+        <!--Start content here-->
+        
+        <!--End content here-->
+        <div id="back-to-top" class="back-to-top">
+            <button class="back-to-top__button" onclick="scrollToTop(300);"><span class="sr-only">Back to top</span><img src="./assets/top-icon-highlight.svg" alt=""></button>
+        </div>
     </main>
     <footer class="footer">
         <h2 class="footer__heading">Let's Connect!</h2>

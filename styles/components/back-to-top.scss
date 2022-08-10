@@ -3,9 +3,13 @@
     display: block;
     opacity: 0;
     transition: opacity .5s ease-in;
-    right: 2rem;
+    right: 0;
     bottom: 3rem;
     @include padding-mixin;
+
+    @include mobile-break {
+        right: 2rem;
+    }
     
     &__button {
         border: 0;
