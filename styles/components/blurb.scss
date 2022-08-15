@@ -1,5 +1,4 @@
 .blurb {
-    margin-top: 2.5rem;
     margin-bottom: 2.5rem;
 
     &__heading-wrapper {
@@ -13,6 +12,7 @@
             height: 100%;
             display: grid;
             align-items: center;
+            margin-top: 2.5rem;
         }
     }
 

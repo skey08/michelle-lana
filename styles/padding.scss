@@ -46,6 +46,14 @@
     }
 }
 
+.mobile-padding-top {
+    padding-top: 3rem;
+
+    @include mobile-break {
+        padding-top: 0;
+    }
+}
+
 .container-padding {
     padding: 3rem 0;
 
