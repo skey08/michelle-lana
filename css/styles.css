@@ -574,6 +574,15 @@ ul, li {
 .blurb {
   margin-bottom: 2.5rem;
 }
+@media only screen and (min-width: 800px) {
+  .blurb {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2.5rem;
+  }
+}
 .blurb__heading-wrapper {
   border-bottom: 5px solid var(--highlight);
   width: 65px;
@@ -586,7 +595,6 @@ ul, li {
     height: 100%;
     display: grid;
     align-items: center;
-    margin-top: 2.5rem;
   }
 }
 .blurb__heading {
@@ -606,14 +614,6 @@ ul, li {
   .blurb__text {
     max-width: 630px;
     font-size: 1.25rem;
-  }
-}
-@media only screen and (min-width: 800px) {
-  .blurb {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    align-items: center;
-    gap: 3rem;
   }
 }
 

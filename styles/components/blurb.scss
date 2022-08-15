@@ -1,6 +1,14 @@
 .blurb {
     margin-bottom: 2.5rem;
 
+    @include mobile-break {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        gap: 3rem;
+        margin-top: 2.5rem;
+    }
+
     &__heading-wrapper {
         border-bottom: 5px solid var(--highlight);
         width: 65px;
@@ -12,7 +20,6 @@
             height: 100%;
             display: grid;
             align-items: center;
-            margin-top: 2.5rem;
         }
     }
 
@@ -34,12 +41,7 @@
         }
     }
 
-    @include mobile-break {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        gap: 3rem;
-    }
+    
 }
 
 .blurb-stacked {
