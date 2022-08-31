@@ -27,10 +27,13 @@ const showHideBackToTop = function() {
 };
 
 function scrollToTop (duration) {
-    const mainHeading = document.getElementsByTagName('h1')[0];
-    console.log(mainHeading)
     // cancel if already on top
     if (document.scrollingElement.scrollTop === 0) return;
+
+    const mainHeading = document.getElementsByTagName('h1')[0];
+    mainHeading.setAttribute('tabIndex', -1);
+    mainHeading.focus();
+    mainHeading.removeAttribute('tabIndex');
 
     const totalScrollDistance = document.scrollingElement.scrollTop;
     let scrollY = totalScrollDistance, oldTimestamp = null;
