@@ -125,13 +125,11 @@ ul, li {
 .subtext {
   font-size: 1.25rem;
   line-height: 1.5;
-  margin-bottom: 2.5rem;
 }
 @media only screen and (min-width: 800px) {
   .subtext {
     font-size: 1.5rem;
     line-height: 1.75;
-    margin-bottom: 1.75rem;
   }
 }
 
