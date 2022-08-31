@@ -314,6 +314,7 @@ ul, li {
   margin-bottom: 0;
   padding-left: 0;
   font-size: 1rem;
+  font-weight: 300;
   list-style-position: inside;
 }
 .default-ordered li:not(:last-child) {
@@ -335,6 +336,7 @@ ul, li {
   list-style-type: lower-alpha;
   padding-left: 0;
   list-style-position: inside;
+  font-weight: 300;
 }
 .alphabet li {
   margin-bottom: 0;

@@ -3,6 +3,7 @@
     margin-bottom: 0;
     padding-left: 0;
     font-size: 1rem;
+    font-weight: 300;
     list-style-position: inside;
 
     li:not(:last-child) {
@@ -26,6 +27,7 @@
     list-style-type: lower-alpha;
     padding-left: 0;
     list-style-position: inside;
+    font-weight: 300;
 
     li {
         margin-bottom: 0;
