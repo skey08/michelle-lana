@@ -34,6 +34,7 @@ function scrollToTop (duration) {
     mainHeading.setAttribute('tabIndex', -1);
     mainHeading.focus();
     mainHeading.removeAttribute('tabIndex');
+    mainHeading.blur();
 
     const totalScrollDistance = document.scrollingElement.scrollTop;
     let scrollY = totalScrollDistance, oldTimestamp = null;
