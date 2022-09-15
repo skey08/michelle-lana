@@ -26,30 +26,25 @@ const showHideBackToTop = function() {
   }
 };
 
-function scrollToTop (duration) {
-    // cancel if already on top
-    if (document.scrollingElement.scrollTop === 0) return;
-
-    const mainHeading = document.getElementsByTagName('h1')[0];
-    mainHeading.setAttribute('tabIndex', -1);
-    mainHeading.focus();
-    mainHeading.removeAttribute('tabIndex');
-    mainHeading.blur();
-
-    const totalScrollDistance = document.scrollingElement.scrollTop;
-    let scrollY = totalScrollDistance, oldTimestamp = null;
-
-    function step (newTimestamp) {
-        if (oldTimestamp !== null) {
-            // if duration is 0 scrollY will be -Infinity
-            scrollY -= totalScrollDistance * (newTimestamp - oldTimestamp) / duration;
-            if (scrollY <= 0) return document.scrollingElement.scrollTop = 0;
-            document.scrollingElement.scrollTop = scrollY;
+function scrollToTop () {
+    window.scrollTo(
+        {
+            top: 0,
+            behavior: 'smooth'
         }
-        oldTimestamp = newTimestamp;
-        window.requestAnimationFrame(step);
-    }
-    window.requestAnimationFrame(step);
+    );
+        
+    setFocus();
+}
+
+function setFocus() {
+    window.setTimeout(function() {
+        const mainHeading = document.getElementsByTagName('h1')[0];
+        mainHeading.setAttribute('tabIndex', -1);
+        mainHeading.focus();
+        mainHeading.removeAttribute('tabIndex');
+        mainHeading.blur();
+    },500)
 }
 
 if (button) {
