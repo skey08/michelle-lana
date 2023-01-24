@@ -27,21 +27,23 @@
     }
 
     &__social-list {
-        display: grid;
-        grid-template-rows: 1fr 1fr 1fr 1fr;
-        grid-template-columns: none;
-        gap: 1.5rem;
-        justify-content: center;
 
-        @include mobile-break {
-            grid-template-columns: min-content min-content min-content min-content;
-            grid-template-rows: none;
-            gap: 2rem;
-        }
     }
 
     &__social-list-item {
         list-style-type: none;
+
+        &:not(:last-child) {
+            padding-bottom: 1.5rem;
+        }
+
+        @include mobile-break {
+            display: inline-block;
+            &:not(:last-child) {
+                padding-right: 2rem;
+            }
+        }
+
     }
 
     &__social-link {

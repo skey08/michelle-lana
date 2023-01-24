@@ -778,22 +778,19 @@ ul, li {
   border-bottom: 3px solid var(--dark-gray);
   padding-bottom: 0px;
 }
-.footer__social-list {
-  display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  grid-template-columns: none;
-  gap: 1.5rem;
-  justify-content: center;
-}
-@media only screen and (min-width: 800px) {
-  .footer__social-list {
-    grid-template-columns: min-content min-content min-content min-content;
-    grid-template-rows: none;
-    gap: 2rem;
-  }
-}
 .footer__social-list-item {
   list-style-type: none;
+}
+.footer__social-list-item:not(:last-child) {
+  padding-bottom: 1.5rem;
+}
+@media only screen and (min-width: 800px) {
+  .footer__social-list-item {
+    display: inline-block;
+  }
+  .footer__social-list-item:not(:last-child) {
+    padding-right: 2rem;
+  }
 }
 .footer__social-link {
   text-transform: uppercase;
