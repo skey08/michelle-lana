@@ -47,12 +47,24 @@
     }
 
     &__social-link {
+        display: inline-block;
         text-transform: uppercase;
         font-weight: 600;
         font-size: 1.25rem;
-        
+        border-bottom: none;
+        &::after{
+            content: '';
+            border-bottom: 1px dashed var(--dark-gray);
+            width: 100%;
+            display: block;
+        }
         &:hover {
-            border-bottom: 3px solid var(--dark-gray);
+            &::after{
+                border-bottom: 3px solid var(--dark-gray);
+            }
+        }
+        @include mobile-break {
+            display: block;
         }
     }
 }

@@ -70,12 +70,20 @@ a {
 }
 
 a.retro-link {
+    display: inline-block;
     text-decoration-line: none;
     color: var(--light-blue);
-    border-bottom: 1px dashed var(--light-blue);
+    border-bottom: none;
+    &::after{
+        content: '';
+        border-bottom: 1px dashed var(--light-blue);
+        width: 100%;
+        display: block;
+        margin-top: -6px;
+    }
     &:hover {
         color: var(--dark-blue);
-        border-bottom: 1px dashed var(--dark-blue);
+        border-bottom: none;
     }
 }
 
