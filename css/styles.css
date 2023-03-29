@@ -643,7 +643,6 @@ ul, li {
 .blurb-stacked__heading {
   font-size: 2rem;
   font-weight: 500;
-  white-space: nowrap;
 }
 @media only screen and (min-width: 800px) {
   .blurb-stacked__heading {
